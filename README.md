@@ -1,7 +1,6 @@
-# EXT-Welcome - Extented for `MMM-GoogleAssistant` v5.x
+# EXT-Welcome - Extented for `MMM-GoogleAssistant`
 
-EXT-Welcome is a module for the [MagicMirror](https://github.com/MichMich/MagicMirror) project by [Michael Teeuw](https://github.com/MichMich).
-This module is an plugin for [MMM-GoogleAssistant](https://wiki.bugsounet.fr/MMM-GoogleAssistant) v5.x
+This module is a plugin for [MMM-GoogleAssistant](https://wiki.bugsounet.fr/MMM-GoogleAssistant)
 
 It allows to have a welcome on start of `MagicMirror` with `MMM-GoogleAssistant`
 
