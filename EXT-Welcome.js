@@ -1,7 +1,7 @@
 /**
  ** Module : EXT-Welcome
  ** @bugsounet
- ** ©02-2022
+ ** ©03-2023
  ** support: https://forum.bugsounet.fr
  **/
 
@@ -18,11 +18,9 @@ Module.register("EXT-Welcome", {
 
   notificationReceived: function(noti, payload,sender) {
     switch(noti) {
-      case "DOM_OBJECTS_CREATED":
-        this.sendSocketNotification("INIT")
-        break
-      case "GAv5_READY":
-        if (sender.name == "MMM-GoogleAssistant") {
+      case "GW_READY":
+        if (sender.name == "Gateway") {
+          this.sendSocketNotification("INIT")
           this.sendNotification("EXT_HELLO", this.name)
           this.sendNotification("GA_ACTIVATE",{type: "TEXT", key: this.config.welcome, chime: false})
         }
