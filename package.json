@@ -1,7 +1,7 @@
 {
   "name": "EXT-Welcome",
-  "version": "1.1.1",
-  "rev": "230723",
+  "version": "1.1.2",
+  "rev": "231001",
   "description": "MMM-GoogleAssistant Extented Send Welcome on start",
   "main": "EXT-Welcome.js",
   "scripts": {
@@ -28,7 +28,7 @@
   },
   "homepage": "https://wiki.bugsounet.fr/en/EXT-Welcome",
   "dependencies": {
-    "esbuild": "^0.18.16",
-    "glob": "^10.3.3"
+    "esbuild": "^0.19.4",
+    "glob": "^10.3.10"
   }
 }
