@@ -1,14 +1,14 @@
-"use strict"
+"use strict";
 
-var NodeHelper = require("node_helper")
+var NodeHelper = require("node_helper");
 
 module.exports = NodeHelper.create({
-  socketNotificationReceived: function (noti, payload) {
+  socketNotificationReceived (noti, payload) {
     switch (noti) {
       case "INIT":
-        console.log("[WELCOME] EXT-Welcome Version:", require('./package.json').version, "rev:", require('./package.json').rev)
-        break
+        console.log("[WELCOME] EXT-Welcome Version:", require("./package.json").version, "rev:", require("./package.json").rev);
+        break;
     }
   }
 
-})
+});
