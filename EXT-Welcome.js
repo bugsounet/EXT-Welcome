@@ -10,21 +10,21 @@ Module.register("EXT-Welcome", {
     welcome: "brief Today"
   },
 
-  getDom: function() {
-    var dom = document.createElement("div")
-    dom.style.display = 'none'
-    return dom
+  getDom () {
+    var dom = document.createElement("div");
+    dom.style.display = "none";
+    return dom;
   },
 
-  notificationReceived: function(noti, payload,sender) {
+  notificationReceived (noti, payload,sender) {
     switch(noti) {
       case "GA_READY":
-        if (sender.name == "MMM-GoogleAssistant") {
-          this.sendSocketNotification("INIT")
-          this.sendNotification("EXT_HELLO", this.name)
-          this.sendNotification("GA_ACTIVATE",{type: "TEXT", key: this.config.welcome, chime: false})
+        if (sender.name === "MMM-GoogleAssistant") {
+          this.sendSocketNotification("INIT");
+          this.sendNotification("EXT_HELLO", this.name);
+          this.sendNotification("GA_ACTIVATE",{ type: "TEXT", key: this.config.welcome, chime: false });
         }
-        break
+        break;
     }
   }
-})
+});
